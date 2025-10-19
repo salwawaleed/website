@@ -1,0 +1,48 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color:#fdf9fb ;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+section{
+    padding: 50px;
+    text-align: center;
+}
+
+.category{
+    margin-bottom: 60px;
+}
+.images{
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    margin-top: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: #aaa #fdf9fb;
+}
+.images::-webkit-scrollbar {
+    height: 8px;
+}
+.images::-webkit-scrollbar-thumb{
+    background: #aaa;
+    border-radius: 10px;
+}
+
+.images img{
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+}
+.images img:hover{
+    transform: scale(1.05)
+}
